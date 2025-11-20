@@ -1,14 +1,13 @@
-# topics.py
+"""
+Topics
+"""
 from dataclasses import dataclass
 from enum import Enum
 
 class TopicCategory(Enum):
     QUANTUM = "quantum"
     ENERGY = "energy" 
-    MEDICAL = "medical"
     NEUROSCIENCE = "neuroscience"
-    SUSTAINABILITY = "sustainability"
-    AI = "artificial_intelligence"
 
 @dataclass
 class TopicConfig:
@@ -19,18 +18,9 @@ class TopicConfig:
 
 TOPICS = {
     "quantum_computing": TopicConfig(
-        # Более специфичный запрос для квантовых вычислений
-        query='(quantum computing) OR (quantum computer) OR (quantum processor) OR (qubit) OR (quantum algorithm) OR (quantum circuit)',
+        query='quantum computer quantum processor qubit',
         description="Quantum Computing",
         color="#BB8FCE",
-        category=TopicCategory.QUANTUM
-    ),
-    
-    "quantum_computing_specific": TopicConfig(
-        # Альтернативный очень специфичный запрос
-        query='"quantum computing" "quantum computer" qubit "quantum algorithm" "quantum hardware"',
-        description="Quantum Computing (Specific)",
-        color="#9B59B6", 
         category=TopicCategory.QUANTUM
     ),
     
