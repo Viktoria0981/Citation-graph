@@ -1,7 +1,7 @@
 """
 OpenAlex API client for fetching research papers.
-
 """
+
 import requests
 from typing import List, Optional, Dict, Any
 from models import Paper, Author, AnalysisError
@@ -14,13 +14,12 @@ class OpenAlexClient:
     BASE_URL = "https://api.openalex.org"
     TIMEOUT = 60
     
-    def __init__(self):
+    def __init__(self) -> None:
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'ResearchPaperAnalyzer/1.0',
             'Accept': 'application/json'
         })
-        print("API Client initialized")
     
     def search_papers(self, topic_config: TopicConfig, limit: int = 25) -> List[Paper]:
         """
@@ -33,167 +32,106 @@ class OpenAlexClient:
             'sort': 'cited_by_count:desc'
         }
         
-        print("=" * 50)
-        print("STARTING API REQUEST")
-        print("=" * 50)
-        print(f"URL: {url}")
-        print(f"Search query: '{topic_config.query}'")
-        
         try:
-            print("\nSending request to OpenAlex API...")
             response = self.session.get(url, params=params, timeout=self.TIMEOUT)
-            
-            print(f"Response received! Status code: {response.status_code}")
             response.raise_for_status()
             
             data = response.json()
             results = data.get('results', [])
             
-            if not results:
-                print("No papers found for this query")
-                return []
-                
-            print("\nParsing papers...")
-            papers = self._parse_papers_response(results)
-            print(f"Successfully parsed: {len(papers)} papers")
-
-            return papers
+            return self._parse_papers_response(results)
             
         except requests.exceptions.Timeout:
-            print("TIMEOUT: Request took too long (60 seconds)")
             raise AnalysisError("API request timed out")
         except requests.exceptions.RequestException as e:
-            print(f"NETWORK ERROR: {e}")
             raise AnalysisError(f"API request failed: {e}")
-        except (KeyError, ValueError) as e:
-            print(f"PARSING ERROR: {e}")
-            raise AnalysisError(f"Failed to parse API response: {e}")
     
     def _parse_papers_response(self, results: List[Dict[str, Any]]) -> List[Paper]:
         """Parse API response into Paper objects."""
-        papers = []
-        parse_errors = 0
+        papers: List[Paper] = []
         
-        for i, result in enumerate(results, 1):
-            try:
-                paper = self._parse_single_paper(result)
-                if paper:
-                    papers.append(paper)
-                    if i <= 3:
-                        print(f"Parsed paper {i}: {paper.get_short_title(50)}")
-                else:
-                    parse_errors += 1
-                    if i <= 3:
-                        print(f"Paper {i}: Failed to parse (missing data)")
-            except Exception as e:
-                parse_errors += 1
-                if i <= 3:
-                    print(f"Paper {i}: Parse error - {e}")
-                continue
-        
-        if parse_errors > 0:
-            print(f"Failed to parse {parse_errors} papers (skipped)")
+        for result in results:
+            paper = self._parse_single_paper(result)
+            if paper:
+                papers.append(paper)
         
         return papers
-    
-    def _safe_get(self, data: Dict[str, Any], *keys: str, default: Any = None) -> Any:
-        """Safely get nested dictionary values."""
-        current = data
-        for key in keys:
-            if isinstance(current, dict):
-                current = current.get(key)
-            else:
-                return default
-            if current is None:
-                return default
-        return current if current is not None else default
     
     def _parse_single_paper(self, result: Dict[str, Any]) -> Optional[Paper]:
         """Parse single paper from API response."""
         try:
-            paper_id = self._safe_get(result, 'id', default='')
-            if paper_id:
-                paper_id = paper_id.split('/')[-1]
-    
-            title = self._safe_get(result, 'title', default='')
+            paper_id = self._extract_paper_id(result.get('id', ''))
+            title = result.get('title', '')
+            
             if not title or not paper_id:
                 return None
             
-            authors = []
-            authorships = self._safe_get(result, 'authorships', default=[])
-            for author_data in authorships:
-                if isinstance(author_data, dict):
-                    author_name = self._safe_get(author_data, 'author', 'display_name', default='')
-                    if author_name:
-                        authors.append(Author(name=author_name))
-            
-            publication_year = self._safe_get(result, 'publication_year')
-            year = None
-            if publication_year and str(publication_year).isdigit():
-                year = int(publication_year)
-            
-            citation_count = self._safe_get(result, 'cited_by_count', default=0)
-            
-            doi = self._safe_get(result, 'doi', default='')
-            openalex_url = self._safe_get(result, 'id', default='')
-            url = doi if doi else openalex_url
-            
-            referenced_works = self._safe_get(result, 'referenced_works', default=[])
-            if not isinstance(referenced_works, list):
-                referenced_works = []
-            
-            source = self._safe_get(result, 'primary_location', 'source', 'display_name', default='Unknown')
+            authors = self._parse_authors(result)
+            year = self._parse_publication_year(result)
+            citation_count = result.get('cited_by_count', 0)
+            url = self._parse_url(result)
+            referenced_works = self._parse_referenced_works(result)
+            source = self._parse_source(result)
             
             return Paper(
                 paper_id=paper_id,
                 title=title,
                 year=year,
                 citation_count=citation_count,
-                authors=authors[:5],
+                authors=authors,
                 url=url,
-                referenced_works=referenced_works[:15],
+                referenced_works=referenced_works,
                 source=source
             )
             
-        except Exception as e:
-            print(f"Debug: Error parsing paper - {e}")
+        except Exception:
             return None
-
-
-# Это тестовый код, позже будут созданы отдельные файлы с тестами.
-if __name__ == "__main__":
-    print("TESTING OPENALEX API CLIENT")
-    print("=" * 50)
     
-    # Создаем тестовую конфигурацию темы
-    test_topic = TopicConfig(
-        query='quantum computer quantum processor qubit',
-        description="Quantum Computing",
-        color="#BB8FCE",
-        category="quantum"
-    )
+    def _parse_authors(self, result: Dict[str, Any]) -> List[Author]:
+        """Parse authors from API response."""
+        authors: List[Author] = []
+        authorships = result.get('authorships', [])
+        
+        for author_data in authorships:
+            author_name = author_data.get('author', {}).get('display_name', '')
+            if author_name:
+                authors.append(Author(name=author_name))
+        
+        return authors[:3]
     
-    try:
-        client = OpenAlexClient()
-        papers = client.search_papers(test_topic, limit=10)
+    def _parse_publication_year(self, result: Dict[str, Any]) -> Optional[int]:
+        """Parse publication year from API response."""
+        publication_year = result.get('publication_year')
+        if publication_year and str(publication_year).isdigit():
+            return int(publication_year)
+        return None
+    
+    def _parse_url(self, result: Dict[str, Any]) -> str:
+        """Parse URL from API response."""
+        doi = result.get('doi', '')
+        return doi if doi else result.get('id', '')
+    
+    def _parse_referenced_works(self, result: Dict[str, Any]) -> List[str]:
+        """Parse referenced works from API response."""
+        referenced_works = result.get('referenced_works', [])
+        if not isinstance(referenced_works, list):
+            return []
         
-        print("\n" + "=" * 50)
-        print("FINAL RESULTS")
-        print("=" * 50)
-        print(f"Total papers retrieved: {len(papers)}")
+        cleaned_refs = []
+        for ref in referenced_works[:15]:
+            clean_id = self._extract_paper_id(ref)
+            if clean_id:
+                cleaned_refs.append(clean_id)
         
-        if papers:
-            # Показываем все полученные статьи
-            for i, paper in enumerate(papers, 1):
-                print(f"\n{i}. {paper.title}")
-                print(f"   ID: {paper.paper_id}")
-                print(f"   Year: {paper.year}")
-                print(f"   Citations: {paper.citation_count}")
-                print(f"   Source: {paper.source}")
-                print(f"   Authors: {', '.join(str(a) for a in paper.authors[:3])}")
-                print(f"   References: {len(paper.referenced_works)}")
-                if paper.referenced_works:
-                    print(f"   Sample refs: {paper.referenced_works[:2]}")
-        
-    except Exception as e:
-        print(f"\n TEST FAILED: {e}")
+        return cleaned_refs
+    
+    def _parse_source(self, result: Dict[str, Any]) -> str:
+        """Parse source from API response."""
+        source = result.get('primary_location', {}).get('source', {}).get('display_name', '')
+        return source or 'Unknown'
+    
+    def _extract_paper_id(self, url: str) -> str:
+        """Extract paper ID from OpenAlex URL."""
+        if not url:
+            return ""
+        return url.split('/')[-1] if '/' in url else url
