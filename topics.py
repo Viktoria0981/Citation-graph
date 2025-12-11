@@ -1,42 +1,31 @@
 """
-Topics
+Topics configuration.
 """
-from dataclasses import dataclass
-from enum import Enum
 
-class TopicCategory(Enum):
-    QUANTUM = "quantum"
-    ENERGY = "energy" 
-    NEUROSCIENCE = "neuroscience"
+from dataclasses import dataclass
+from typing import Dict
+
 
 @dataclass
 class TopicConfig:
+    """Configuration for research topics."""
     query: str
     description: str
     color: str
-    category: TopicCategory
+    category: str
 
-TOPICS = {
-    "quantum_computing": TopicConfig(
-        query='quantum computer quantum processor qubit',
-        description="Quantum Computing",
-        color="#BB8FCE",
-        category=TopicCategory.QUANTUM
+
+TOPICS: Dict[str, TopicConfig] = {
+    "quantum_foundations": TopicConfig(
+        query='("quantum supremacy" OR "NISQ era" OR "variational quantum" OR VQE OR QAOA)',
+        description="Quantum Computing Foundations", 
+        color="#4ECDC4",
+        category="quantum"
     ),
-    
-    "battery_tech": TopicConfig(
-        query="solid state lithium battery energy density",
-        description="Next-Gen Batteries", 
-        color="#F7DC6F",
-        category=TopicCategory.ENERGY
-    ),
-    
-    "ai_neuroscience": TopicConfig(
-        query="deep learning fMRI classification",
-        description="AI in Neuroscience",
-        color="#5DADE2",
-        category=TopicCategory.NEUROSCIENCE
-    ),
+    "crispr_cas9": TopicConfig(
+    query='CRISPR AND Cas9 AND ("gene editing" OR Doudna OR Charpentier)',
+    description="CRISPR-Cas9 Gene Editing", 
+    color="#2C3837",
+    category="biotechnology"
+)
 }
-#Вероятно темы будут еще изменены (и добавлены), когда я начну строить графы, чтобы получились наиболее наглядными)
-#Также на тестах надо будет проверить, чтобы сервер возращал подходящие под мою тему статьи (может быть стоит поменять ключевые слова для отправляемых запросов)

@@ -2,9 +2,8 @@
 Data models for research paper analysis.
 """
 
-from typing import List, Optional, Tuple, Set
+from typing import List, Optional, Tuple, Dict, Any
 from dataclasses import dataclass, field
-from enum import Enum
 
 
 @dataclass
@@ -36,37 +35,10 @@ class Paper:
 
 
 @dataclass
-class TopicAnalysis:
-    """Analysis results for a specific topic."""
-    topic: str
-    papers: List[Paper]
-    total_citations: int = 0
-    avg_citations: float = 0.0
-    year_range: Optional[Tuple[int, int]] = None
-    key_papers: List['KeyPaperAnalysis'] = field(default_factory=list)
-    
-    @property
-    def paper_count(self) -> int:
-        return len(self.papers)
-
-
-class PaperSignificance(Enum):
-    """Types of paper significance."""
-    HIGHLY_CITED = "highly_cited"
-    RECENT_BREAKTHROUGH = "recent_breakthrough" 
-    TREND_SETTER = "trend_setter"
-    BRIDGE_PAPER = "bridge_paper"
-    FOUNDATIONAL = "foundational"
-
-
-@dataclass
-class KeyPaperAnalysis:
-    """Analysis result for a key paper."""
-    paper: Paper
-    significance_tags: Set[PaperSignificance]
-    citation_per_year: float
-    network_centrality: Optional[float] = None
-    reasons: List[str] = field(default_factory=list)
+class CitationGraph:
+    """Citation graph data structure."""
+    nodes: Dict[str, Paper] = field(default_factory=dict)
+    edges: List[Tuple[str, str]] = field(default_factory=list)
 
 
 class AnalysisError(Exception):

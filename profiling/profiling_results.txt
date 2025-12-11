@@ -1,0 +1,695 @@
+         7854 function calls (7691 primitive calls) in 2.031 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.001    0.001    2.027    2.027 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\profiling\prof2.py:18(profile)
+        1    0.000    0.000    2.022    2.022 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\api_client.py:24(search_papers)
+        1    0.000    0.000    2.002    2.002 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py:593(get)
+        1    0.000    0.000    2.002    2.002 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py:500(request)
+        1    0.000    0.000    1.996    1.996 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py:673(send)
+        1    0.000    0.000    1.589    1.589 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py:590(send)
+        1    0.000    0.000    1.587    1.587 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:592(urlopen)
+        1    0.000    0.000    1.584    1.584 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:377(_make_request)
+        1    0.000    0.000    1.017    1.017 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1085(_validate_conn)
+        1    0.000    0.000    1.017    1.017 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:718(connect)
+       46    0.000    0.000    0.960    0.021 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\socket.py:706(readinto)
+       46    0.001    0.000    0.959    0.021 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:1289(recv_into)
+       46    0.000    0.000    0.958    0.021 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:1129(read)
+        1    0.000    0.000    0.958    0.958 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:895(_ssl_wrap_socket_and_match_hostname)
+       46    0.958    0.021    0.958    0.021 {method 'read' of '_ssl._SSLSocket' objects}
+       30    0.000    0.000    0.956    0.032 {method 'readline' of '_io.BufferedReader' objects}
+        1    0.000    0.000    0.949    0.949 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\ssl_.py:410(ssl_wrap_socket)
+        1    0.909    0.909    0.909    0.909 {method 'load_verify_locations' of '_ssl._SSLContext' objects}
+        1    0.000    0.000    0.566    0.566 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:534(getresponse)
+        1    0.000    0.000    0.565    0.565 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:1386(getresponse)
+        1    0.000    0.000    0.565    0.565 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:324(begin)
+        1    0.000    0.000    0.563    0.563 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:291(_read_status)
+       11    0.001    0.000    0.407    0.037 {method 'join' of 'bytes' objects}
+        3    0.000    0.000    0.407    0.136 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:890(content)
+       10    0.000    0.000    0.406    0.041 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:816(generate)
+       10    0.000    0.000    0.406    0.041 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:1069(stream)
+       10    0.000    0.000    0.406    0.041 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:1202(read_chunked)
+       10    0.000    0.000    0.393    0.039 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:1162(_update_chunk_length)
+        1    0.000    0.000    0.059    0.059 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:192(_new_conn)
+        1    0.000    0.000    0.059    0.059 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py:27(create_connection)
+        1    0.048    0.048    0.048    0.048 {method 'connect' of '_socket.socket' objects}
+        1    0.000    0.000    0.040    0.040 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\ssl_.py:508(_ssl_wrap_socket_impl)
+        1    0.000    0.000    0.040    0.040 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:449(wrap_socket)
+        1    0.000    0.000    0.040    0.040 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:990(_create)
+        1    0.000    0.000    0.040    0.040 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:1365(do_handshake)
+        1    0.040    0.040    0.040    0.040 {method 'do_handshake' of '_ssl._SSLSocket' objects}
+        1    0.000    0.000    0.016    0.016 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:947(json)
+        1    0.000    0.000    0.016    0.016 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py:299(loads)
+        1    0.000    0.000    0.016    0.016 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py:340(decode)
+        1    0.016    0.016    0.016    0.016 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py:351(raw_decode)
+        1    0.000    0.000    0.010    0.010 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\socket.py:960(getaddrinfo)
+        1    0.010    0.010    0.010    0.010 {built-in method _socket.getaddrinfo}
+        1    0.000    0.000    0.009    0.009 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\ssl_.py:225(create_urllib3_context)
+       29    0.007    0.000    0.007    0.000 {built-in method __new__ of type object at 0x00007FF9716068A0}
+        1    0.000    0.000    0.007    0.007 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:430(__new__)
+        9    0.000    0.000    0.007    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:494(_decode)
+       10    0.001    0.000    0.007    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:105(decompress)
+        9    0.006    0.001    0.006    0.001 {method 'decompress' of 'zlib.Decompress' objects}
+        1    0.000    0.000    0.005    0.005 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py:457(prepare_request)
+        9    0.000    0.000    0.004    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:1180(_handle_chunk)
+       16    0.000    0.000    0.004    0.000 {method 'read' of '_io.BufferedReader' objects}
+       15    0.000    0.000    0.004    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:635(_safe_read)
+        1    0.000    0.000    0.004    0.004 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\weakref.py:585(__call__)
+        1    0.000    0.000    0.004    0.004 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1170(_close_pool_connections)
+        1    0.003    0.003    0.004    0.004 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:369(close)
+        1    0.000    0.000    0.004    0.004 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\api_client.py:49(_parse_papers_response)
+       15    0.000    0.000    0.004    0.000 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\api_client.py:60(_parse_single_paper)
+        1    0.000    0.000    0.003    0.003 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\graph_algorithms.py:18(analyze_citation_graph)
+        1    0.000    0.000    0.003    0.003 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:207(get_netrc_auth)
+        1    0.000    0.000    0.003    0.003 <frozen importlib._bootstrap>:1349(_find_and_load)
+        1    0.000    0.000    0.003    0.003 <frozen importlib._bootstrap>:1304(_find_and_load_unlocked)
+        1    0.000    0.000    0.002    0.002 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\graph_algorithms.py:53(_calculate_graph_metrics)
+        1    0.000    0.000    0.002    0.002 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:245(parse_headers)
+        1    0.000    0.000    0.002    0.002 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\utils\decorators.py:783(func)
+        1    0.000    0.000    0.002    0.002 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:231(_parse_header_lines)
+        1    0.000    0.000    0.002    0.002 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\utils\decorators.py:715(_lazy_compile)
+        1    0.000    0.000    0.002    0.002 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\parser.py:56(parsestr)
+        1    0.000    0.000    0.002    0.002 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\utils\decorators.py:869(compile)
+        1    0.000    0.000    0.002    0.002 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\parser.py:41(parse)
+        1    0.000    0.000    0.002    0.002 <frozen importlib._bootstrap>:911(_load_unlocked)
+        1    0.000    0.000    0.002    0.002 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:351(prepare)
+  356/352    0.000    0.000    0.002    0.000 {built-in method builtins.isinstance}
+        6    0.000    0.000    0.002    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\structures.py:40(__init__)
+       15    0.001    0.000    0.002    0.000 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\api_client.py:90(_parse_authors)
+        9    0.000    0.000    0.002    0.000 <frozen _collections_abc>:979(update)
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:1020(exec_module)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\feedparser.py:173(feed)
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:1093(get_code)
+       15    0.000    0.000    0.001    0.000 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\api_client.py:114(_parse_referenced_works)
+        2    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\feedparser.py:178(_call_parse)
+        2    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\feedparser.py:218(_parsegen)
+       26    0.000    0.000    0.001    0.000 <frozen abc>:117(__instancecheck__)
+       26    0.000    0.000    0.001    0.000 {built-in method _abc._abc_instancecheck}
+     73/9    0.001    0.000    0.001    0.000 <frozen abc>:121(__subclasscheck__)
+     73/9    0.000    0.000    0.001    0.000 {built-in method _abc._abc_subclasscheck}
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap>:1240(_find_spec)
+       21    0.000    0.000    0.001    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\enum.py:695(__call__)
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:1551(find_spec)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:409(prepare_url)
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:1522(_get_spec)
+        8    0.000    0.000    0.001    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\enum.py:1596(__or__)
+        3    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1624(find_spec)
+       21    0.000    0.000    0.001    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\enum.py:1156(__new__)
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:1214(get_data)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\utils\decorators.py:917(assemble)
+        5    0.000    0.000    0.001    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\url.py:227(_encode_invalid_chars)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\structures.py:76(copy)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py:750(merge_environment_settings)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py:423(get_connection_with_tls_context)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py:336(build_response)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:418(request)
+        1    0.001    0.001    0.001    0.001 {built-in method builtins.compile}
+        2    0.000    0.000    0.001    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\url.py:367(parse_url)
+        1    0.001    0.001    0.001    0.001 {built-in method _io.open_code}
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\utils\decorators.py:1059(signature)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:816(get_environ_proxies)
+      240    0.000    0.000    0.001    0.000 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\api_client.py:133(_extract_paper_id)
+        6    0.000    0.000    0.001    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\enum.py:1459(_missing_)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py:292(connection_from_host)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\graph_algorithms.py:33(_build_network)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py:321(connection_from_context)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:1015(close)
+        5    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:145(_path_stat)
+        5    0.001    0.000    0.001    0.000 {built-in method nt.stat}
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\socket.py:501(close)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\feedparser.py:472(_parse_headers)
+        7    0.000    0.000    0.001    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py:61(merge_setting)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:1361(_real_close)
+        1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py:346(connection_from_pool_key)
+      2/1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\inspect.py:3373(signature)
+      2/1    0.000    0.000    0.001    0.001 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\inspect.py:3094(from_callable)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:106(_encode_params)
+      592    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:755(should_bypass_proxies)
+      2/1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\inspect.py:2487(_signature_from_callable)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py:245(_new_pool)
+      595    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:980(__init__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\cookies.py:124(extract_cookies_to_jar)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\utils\backends.py:487(__signature__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:175(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\api_client.py:17(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_collections.py:240(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:978(urlencode)
+      274    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\url.py:349(_encode_target)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py:390(__init__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\graph.py:1950(number_of_edges)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_collections.py:335(extend)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\graph.py:1907(size)
+        4    0.000    0.000    0.000    0.000 {built-in method nt._path_exists}
+        6    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:929(quote_plus)
+       15    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:101(_path_join)
+  452/429    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:115(proxy_bypass)
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.sum}
+      303    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+       12    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\queue.py:180(get)
+        7    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:875(quote)
+       10    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:374(urlparse)
+       77    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+    72/70    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py:280(cert_verify)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\cookiejar.py:1681(extract_cookies)
+        7    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:951(quote_from_bytes)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py:2495(getproxies_environment)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\socket.py:497(_real_close)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:256(_get_conn)
+        1    0.000    0.000    0.000    0.000 {function socket.close at 0x00000185972F02C0}
+       20    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\_policybase.py:301(header_source_parse)
+        5    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:404(putheader)
+       25    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\enum.py:1439(_iter_member_by_value_)
+       11    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\queue.py:140(put)
+       32    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\graph.py:1943(<genexpr>)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:610(prepare_cookies)
+       46    0.000    0.000    0.000    0.000 {method '_checkReadable' of '_io._IOBase' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:1322(endheaders)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\cookiejar.py:1600(make_cookies)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\cookies.py:140(get_cookie_header)
+       26    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\_policybase.py:319(header_fetch_parse)
+        8    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\message.py:498(get)
+        2    0.000    0.000    0.000    0.000 <class 'networkx.utils.decorators.argmap'> compilation 4:1(argmap_degree_centrality_1)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:213(_read_headers)
+       64    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\reportviews.py:452(__iter__)
+       12    0.000    0.000    0.000    0.000 <frozen _collections_abc>:808(get)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:1084(_send_output)
+       20    0.000    0.000    0.000    0.000 <frozen _collections_abc>:897(__iter__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:483(prepare_headers)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:555(options)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py:2741(getproxies)
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\cookies.py:35(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1044(_new_conn)
+        4    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\message.py:600(get_content_type)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:602(__init__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\utils\backends.py:525(_call_if_no_backends_installed)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\message.py:487(items)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:1029(send)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:782(_compile_bytecode)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\algorithms\centrality\degree_alg.py:9(degree_centrality)
+        7    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:335(to_key_val_list)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\feedparser.py:102(push)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:1252(sendall)
+       18    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\digraph.py:666(add_edge)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:384(putrequest)
+       26    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\_policybase.py:289(_sanitize_header)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\graph_builder.py:33(build_enhanced_citation_graph)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:909(text)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\inspect.py:2383(_signature_from_function)
+       44    0.000    0.000    0.000    0.000 {method 'match' of 're.Pattern' objects}
+       23    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\feedparser.py:129(__next__)
+        1    0.000    0.000    0.000    0.000 {built-in method marshal.loads}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py:523(request_url)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\feedparser.py:184(close)
+       15    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\digraph.py:439(add_node)
+        5    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:1294(putheader)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:430(close)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\graph_algorithms.py:74(_find_central_papers)
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\utils\decorators.py:849(_name)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:1138(putrequest)
+       20    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_collections.py:300(add)
+        1    0.000    0.000    0.000    0.000 {method '_wrap_socket' of '_ssl._SSLContext' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\graph_builder.py:15(build_citation_graph)
+        4    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\message.py:533(get_all)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:469(urlsplit)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:480(_call_with_frames_removed)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:77(proxy_bypass_registry)
+       24    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_collections.py:257(__getitem__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\function.py:105(density)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:1225(send)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:828(select_proxy)
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\message.py:624(get_content_maintype)
+       38    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\structures.py:46(__setitem__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py:178(__init__)
+      284    0.000    0.000    0.000    0.000 {method 'decode' of 'bytes' objects}
+        4    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\url.py:301(_normalize_host)
+        1    0.000    0.000    0.000    0.000 {method 'write' of '_ssl._SSLSocket' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:806(module_from_spec)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\netrc.py:1(<module>)
+        5    0.000    0.000    0.000    0.000 {built-in method builtins.next}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\encodings\__init__.py:71(search_function)
+       12    0.000    0.000    0.000    0.000 <frozen os>:712(__getitem__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\feedparser.py:139(__init__)
+       15    0.000    0.000    0.000    0.000 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\api_client.py:102(_parse_publication_year)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:890(default_headers)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:615(__init__)
+       18    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\structures.py:51(__getitem__)
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\cookies.py:521(cookiejar_from_dict)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\function.py:97(number_of_edges)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\contextlib.py:145(__exit__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:416(__enter__)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:513(cache_from_source)
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.__build_class__}
+        9    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:164(hostname)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\response.py:40(assert_header_parsing)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1233(path_stats)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:733(_init_module_attrs)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:475(_init_decoder)
+       25    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\enum.py:115(_iter_bits_lsb)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:164(_path_isfile)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:258(extract_zipped_paths)
+       23    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\feedparser.py:79(readline)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:155(_path_is_mode_type)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:658(__init__)
+        5    0.000    0.000    0.000    0.000 {method 'subn' of 're.Pattern' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method today}
+       22    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\threading.py:398(notify)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\socket.py:221(__init__)
+      4/3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\functools.py:1010(__get__)
+        3    0.000    0.000    0.000    0.000 {built-in method winreg.QueryValueEx}
+       24    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\enum.py:1589(_get_value)
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\re\__init__.py:183(sub)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:341(__init__)
+      191    0.000    0.000    0.000    0.000 <string>:2(__init__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:766(_error_catcher)
+       54    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+       15    0.000    0.000    0.000    0.000 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\api_client.py:128(_parse_source)
+       46    0.000    0.000    0.000    0.000 {method '_checkClosed' of '_io._IOBase' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:650(requote_uri)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:81(__init__)
+       42    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:869(__missing__)
+      292    0.000    0.000    0.000    0.000 {built-in method builtins.ord}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:235(_get_decoder)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:632(cached)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:304(acquire)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:132(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method nt._path_isdir}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:642(_get_cached)
+       27    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\utils.py:47(_has_surrogates)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\typing.py:1374(__instancecheck__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\feedparser.py:54(__init__)
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\inspect.py:2754(__init__)
+        3    0.000    0.000    0.000    0.000 <frozen ntpath>:343(expanduser)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\cookiejar.py:1357(add_cookie_header)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py:1500(debug)
+        2    0.000    0.000    0.000    0.000 {built-in method winreg.OpenKey}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:666(release_conn)
+       47    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\socket.py:744(readable)
+      122    0.000    0.000    0.000    0.000 <frozen os>:735(__iter__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:85(path_url)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:101(__init__)
+        4    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\utils\decorators.py:1195(_indent)
+       55    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\message.py:243(get_payload)
+        6    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\socket.py:100(_intenum_converter)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:261(__init__)
+       73    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py:2692(getproxies_registry)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py:95(_default_key_normalizer)
+       33    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\utils\misc.py:593(_clear_cache)
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\encodings\idna.py:179(encode)
+        2    0.000    0.000    0.000    0.000 {method 'readlines' of '_io._IOBase' objects}
+       48    0.000    0.000    0.000    0.000 {method '__exit__' of 'memoryview' objects}
+        3    0.000    0.000    0.000    0.000 {function HTTPResponse.close at 0x00000185973D7A60}
+        4    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\cookiejar.py:1262(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py:159(resolve_redirects)
+        5    0.000    0.000    0.000    0.000 {method 'settimeout' of '_socket.socket' objects}
+       23    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\threading.py:303(__enter__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\typing.py:1665(__subclasscheck__)
+       14    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:119(_coerce_args)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py:1772(isEnabledFor)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:294(_put_conn)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\inspect.py:3042(__init__)
+       10    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:205(_hostinfo)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:626(unquote_unreserved)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:588(prepare_auth)
+        5    0.000    0.000    0.000    0.000 <frozen _collections_abc>:815(__contains__)
+       18    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\url.py:242(<lambda>)
+       22    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\threading.py:318(_is_owned)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py:216(init_poolmanager)
+       72    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+       23    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\threading.py:306(__exit__)
+       12    0.000    0.000    0.000    0.000 <frozen os>:786(encodekey)
+       94    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:1117(_checkClosed)
+        4    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:1024(check_header_validity)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:661(verify_flags)
+        7    0.000    0.000    0.000    0.000 {built-in method builtins.any}
+        1    0.000    0.000    0.000    0.000 {built-in method zlib.decompressobj}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1619(_get_spec)
+       37    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\reportviews.py:1073(__len__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\encodings\__init__.py:43(normalize_encoding)
+       20    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\message.py:515(set_raw)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\socket.py:304(makefile)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:504(set_alpn_protocols)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:1008(get_auth_from_url)
+       30    0.000    0.000    0.000    0.000 {method 'setdefault' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:524(_flush_decoder)
+        4    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\timeout.py:109(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py:373(build_connection_pool_key_attributes)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1145(_normalize_host)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:425(_close_conn)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\digraph.py:334(__init__)
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\re\__init__.py:330(_compile)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:630(prepare_hooks)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:867(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py:202(__init__)
+        9    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\url.py:330(_idna_encode)
+       10    0.000    0.000    0.000    0.000 {method 'split' of 'bytes' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\inspect.py:3110(replace)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:346(_get_timeout)
+       23    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\queue.py:306(_qsize)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:541(minimum_version)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py:76(_urllib3_request_context)
+       37    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\queue.py:46(__init__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py:199(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'close' of '_io.BufferedReader' objects}
+       15    0.000    0.000    0.000    0.000 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\api_client.py:109(_parse_url)
+       11    0.000    0.000    0.000    0.000 {method 'search' of 're.Pattern' objects}
+      6/4    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\utils\decorators.py:1165(_flatten)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:162(__enter__)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+        8    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:1035(_validate_header_part)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:207(register_hook)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:833(spec_from_file_location)
+       36    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\reportviews.py:199(__contains__)
+       13    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py:19(to_str)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:441(_encode_hostname)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\contextlib.py:136(__enter__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\contextlib.py:303(helper)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:525(urlunparse)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:529(get_encoding_from_headers)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:442(flush)
+        1    0.000    0.000    0.000    0.000 {method 'write' of '_io.StringIO' objects}
+       11    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\queue.py:312(_get)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\digraph.py:958(edges)
+        5    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\structures.py:57(__iter__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\ssl_.py:484(is_ipaddress)
+       70    0.000    0.000    0.000    0.000 <frozen _collections_abc>:439(__subclasshook__)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+        5    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:453(<genexpr>)
+       13    0.000    0.000    0.000    0.000 {method 'isalnum' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:764(get_proxy)
+        4    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\message.py:29(_splitparam)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py:93(_set_socket_options)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\timeout.py:188(clone)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\feedparser.py:123(pushlines)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:413(_splitnetloc)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py:1826(_is_disabled)
+        6    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\cookiejar.py:1228(deepvalues)
+       54    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:137(_path_split)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:669(verify_mode)
+        1    0.000    0.000    0.000    0.000 {method '__exit__' of '_io._IOBase' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:124(setdefault)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:396(_check_close)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\socket.py:782(close)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py:107(get_redirect_target)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\cookies.py:542(merge_cookies)
+       28    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+       23    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
+       16    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\reportviews.py:1074(<genexpr>)
+       21    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_collections.py:289(__iter__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:947(_byte_quoter_factory)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\url.py:263(_remove_path_dot_segments)
+       23    0.000    0.000    0.000    0.000 {method '__enter__' of '_thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\feedparser.py:71(close)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:126(flush)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\reportviews.py:1067(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:710(_init_length)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:426(_get_module_lock)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\_distutils_hack\__init__.py:101(find_spec)
+        5    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:163(host)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\encodings\idna.py:378(getregentry)
+       11    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\queue.py:309(_put)
+       22    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.lock' objects}
+        6    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:1066(_output)
+       25    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\structures.py:58(<genexpr>)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\url.py:100(__new__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:494(prepare_body)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\weakref.py:568(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:769(is_redirect)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\feedparser.py:197(_new_message)
+        6    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\threading.py:122(RLock)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\ssl_.py:186(resolve_cert_reqs)
+       23    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+       12    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\timeout.py:130(_validate_timeout)
+       33    0.000    0.000    0.000    0.000 {method 'partition' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\threading.py:281(__init__)
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+        1    0.000    0.000    0.000    0.000 {method 'setsockopt' of '_socket.socket' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:190(_path_abspath)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_collections.py:93(__getitem__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\inspect.py:764(unwrap)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:697(_classify_pyc)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1226(__exit__)
+        2    0.000    0.000    0.000    0.000 {method 'extend' of 'collections.deque' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\timeout.py:172(from_float)
+       21    0.000    0.000    0.000    0.000 {method 'popleft' of 'collections.deque' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:420(__exit__)
+       15    0.000    0.000    0.000    0.000 {method 'isdigit' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\digraph.py:1068(degree)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:862(__init__)
+       20    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+       15    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py:387(is_retry)
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\timeout.py:126(resolve_default_timeout)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\contextlib.py:108(__init__)
+        8    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py:242(<genexpr>)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:74(__new__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\socket.py:507(detach)
+       47    0.000    0.000    0.000    0.000 {built-in method builtins.chr}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:569(hostname_checks_common_name)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\socket.py:517(family)
+       10    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:406(<genexpr>)
+       12    0.000    0.000    0.000    0.000 <frozen os>:780(check_str)
+       13    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+        3    0.000    0.000    0.000    0.000 {method 'sub' of 're.Pattern' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:177(_path_isabs)
+        3    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py:799(mount)
+        6    0.000    0.000    0.000    0.000 {built-in method _imp.release_lock}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\inspect.py:176(get_annotations)
+        1    0.000    0.000    0.000    0.000 <frozen _collections_abc>:853(__len__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\message.py:150(__init__)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:89(_unpack_uint32)
+       23    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.lock' objects}
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_collections.py:82(__init__)
+        5    0.000    0.000    0.000    0.000 {method 'fullmatch' of 're.Pattern' objects}
+       11    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 <frozen _collections_abc>:292(__subclasshook__)
+        6    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\graph.py:476(__len__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\request.py:199(body_to_chunks)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:372(release)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\cookiejar.py:1735(clear_expired_cookies)
+       17    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        7    0.000    0.000    0.000    0.000 {method 'rstrip' of 'bytes' objects}
+        4    0.000    0.000    0.000    0.000 <frozen _collections_abc>:827(items)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_collections.py:100(__setitem__)
+        7    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\inspect.py:2819(kind)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:536(urlunsplit)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:1121(closed)
+        2    0.000    0.000    0.000    0.000 {method 'end' of 're.Match' objects}
+        4    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\utils\decorators.py:826(_count)
+        2    0.000    0.000    0.000    0.000 {method 'pop' of 'collections.OrderedDict' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\socket.py:694(__init__)
+       18    0.000    0.000    0.000    0.000 {method 'group' of 're.Match' objects}
+        2    0.000    0.000    0.000    0.000 <frozen _collections_abc>:108(_check_methods)
+        4    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\cookiejar.py:885(__init__)
+       15    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        5    0.000    0.000    0.000    0.000 {method 'count' of 'bytes' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:258(__init__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\cookies.py:358(update)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:559(options)
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:139(<genexpr>)
+        1    0.000    0.000    0.000    0.000 {built-in method _socket.getdefaulttimeout}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:999(raise_for_status)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:504(_parse_content_type_header)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\utils\backends.py:496(<genexpr>)
+        1    0.000    0.000    0.000    0.000 {method 'flush' of 'zlib.Decompress' objects}
+        9    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:799(iter_content)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py:379(_is_method_retryable)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\reportviews.py:421(__init__)
+        2    0.000    0.000    0.000    0.000 {method 'union' of 'frozenset' objects}
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:677(verify_mode)
+        4    0.000    0.000    0.000    0.000 {built-in method time.time}
+       17    0.000    0.000    0.000    0.000 {method 'isascii' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:730(_validate_timestamp_pyc)
+        1    0.000    0.000    0.000    0.000 <frozen codecs>:94(__new__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:334(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\typing.py:426(inner)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py:781(get_adapter)
+        1    0.000    0.000    0.000    0.000 <frozen _collections_abc>:553(__subclasshook__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\graph.py:745(nodes)
+        4    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\reportviews.py:428(__call__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\digraph.py:402(succ)
+        6    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\cookiejar.py:1754(__iter__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:982(find_spec)
+       15    0.000    0.000    0.000    0.000 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\graph_algorithms.py:82(<lambda>)
+        2    0.000    0.000    0.000    0.000 {method 'read' of '_io.StringIO' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\timeout.py:202(start_connect)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:1286(_validate_host)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\message.py:211(is_multipart)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:393(prepare_method)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1128(find_spec)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:156(username)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:692(unquote)
+        5    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\_internal_utils.py:25(to_native_string)
+        4    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.RLock' objects}
+       16    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:491(_verbose_message)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py:390(_merge_pool_kwargs)
+       12    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\inspect.py:2807(name)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\cookiejar.py:1298(_cookie_attrs)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:1153(supports_chunked_reads)
+        1    0.000    0.000    0.000    0.000 {method 'Close' of 'winreg.PyHKEY' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:270(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'getsockopt' of '_socket.socket' objects}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:645(parent)
+        1    0.000    0.000    0.000    0.000 {method 'getpeername' of '_socket.socket' objects}
+        3    0.000    0.000    0.000    0.000 {method 'values' of 'mappingproxy' objects}
+        6    0.000    0.000    0.000    0.000 {method 'values' of 'collections.OrderedDict' objects}
+        8    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:665(verify_flags)
+        1    0.000    0.000    0.000    0.000 {method 'extend' of 'bytearray' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\socket.py:491(_decref_socketios)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\message.py:335(set_payload)
+        1    0.000    0.000    0.000    0.000 <string>:1(<lambda>)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:175(port)
+        4    0.000    0.000    0.000    0.000 {method 'release' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\socket.py:523(type)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\feedparser.py:210(_pop_message)
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\hooks.py:15(default_hooks)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:949(_wrap_ipv6)
+        5    0.000    0.000    0.000    0.000 {method 'decode' of 'bytearray' objects}
+       14    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:108(_noop)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\digraph.py:41(__set__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:232(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\cookiejar.py:1291(_cookies_for_request)
+        4    0.000    0.000    0.000    0.000 {method 'seek' of '_io.StringIO' objects}
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\inspect.py:386(isfunction)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\hooks.py:22(dispatch_hook)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\function.py:89(number_of_nodes)
+        4    0.000    0.000    0.000    0.000 {method 'groups' of 're.Match' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:82(remove)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:429(retries)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.locals}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\graph.py:63(__set__)
+        2    0.000    0.000    0.000    0.000 {method 'update' of 'collections.OrderedDict' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method _imp.is_builtin}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:445(cb)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\inspect.py:3089(<genexpr>)
+        5    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:1278(_validate_path)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\structures.py:60(__len__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\graph.py:838(number_of_nodes)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:674(_check_name_wrapper)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\response.py:91(is_response_to_head)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py:116(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\timeout.py:245(read_timeout)
+        1    0.000    0.000    0.000    0.000 {method 'flush' of '_io.BufferedReader' objects}
+        4    0.000    0.000    0.000    0.000 {method 'count' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 {method 'isidentifier' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.__import__}
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1222(__enter__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:1265(_encode_request)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py:369(<genexpr>)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:67(_relax_case)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py:1758(getEffectiveLevel)
+        6    0.000    0.000    0.000    0.000 {built-in method nt.fspath}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:173(__exit__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\_internal_utils.py:38(unicode_is_ascii)
+        4    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1500(_path_importer_cache)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:1269(_validate_method)
+        4    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\cookies.py:117(info)
+        3    0.000    0.000    0.000    0.000 {method '__contains__' of 'frozenset' objects}
+        1    0.000    0.000    0.000    0.000 {method '_set_alpn_protocols' of '_ssl._SSLContext' objects}
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:421(_checknetloc)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:193(_userinfo)
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py:51(__init__)
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:214(<genexpr>)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\cookies.py:110(__init__)
+        2    0.000    0.000    0.000    0.000 {method 'truncate' of '_io.StringIO' objects}
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\cookiejar.py:44(_debug)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:48(_new_module)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\parser.py:17(__init__)
+        3    0.000    0.000    0.000    0.000 {built-in method from_bytes}
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+        2    0.000    0.000    0.000    0.000 {built-in method sys.audit}
+        1    0.000    0.000    0.000    0.000 {built-in method nt._path_splitroot}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\reportviews.py:184(__len__)
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\timeout.py:227(connect_timeout)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\request.py:144(set_file_position)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\netrc.py:10(NetrcParseError)
+        4    0.000    0.000    0.000    0.000 {method 'items' of 'collections.OrderedDict' objects}
+        3    0.000    0.000    0.000    0.000 {method 'gettimeout' of '_socket.socket' objects}
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:453(isclosed)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py:91(merge_hooks)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\netrc.py:66(netrc)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\netrc.py:22(_netrclex)
+        2    0.000    0.000    0.000    0.000 {built-in method time.perf_counter}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\digraph.py:78(__set__)
+        4    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:79(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py:103(allowed_gai_family)
+        6    0.000    0.000    0.000    0.000 {built-in method _imp.acquire_lock}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:355(proxy_is_forwarding)
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.callable}
+        1    0.000    0.000    0.000    0.000 <class 'networkx.utils.decorators.argmap'> compilation 4:1(<module>)
+        4    0.000    0.000    0.000    0.000 <frozen _collections_abc>:850(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:362(proxy_is_tunneling)
+        1    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:341(is_closed)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\reportviews.py:180(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'append' of 'bytearray' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\ssl_.py:209(resolve_ssl_version)
+        2    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method _imp.find_frozen}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\http\client.py:926(_get_hostport)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:881(default_user_agent)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\coreviews.py:44(__init__)
+        3    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\inspect.py:3102(parameters)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py:182(host)
+        2    0.000    0.000    0.000    0.000 {method 'isalpha' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\queue.py:303(_init)
+        1    0.000    0.000    0.000    0.000 {function socket.detach at 0x00000185972F0360}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:653(has_location)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\email\feedparser.py:126(__iter__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\utils.py:733(set_environ)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:572(prepare_content_length)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\utils\decorators.py:1053(<genexpr>)
+        2    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        1    0.000    0.000    0.000    0.000 {function HTTPResponse.flush at 0x00000185973D7B00}
+        1    0.000    0.000    0.000    0.000 {method 'cast' of 'memoryview' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.all}
+        1    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:599(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'fileno' of '_socket.socket' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method atexit.register}
+        1    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+        1    0.000    0.000    0.000    0.000 {built-in method time.monotonic}
+        1    0.000    0.000    0.000    0.000 {built-in method sys.getrecursionlimit}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py:1354(disable)
+        1    0.000    0.000    0.000    0.000 {built-in method _weakref._remove_dead_weakref}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\reportviews.py:207(__call__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\reportviews.py:1102(__call__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1184(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\_distutils_hack\__init__.py:108(<lambda>)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\ssl.py:1121(_check_connected)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\graph_algorithms.py:15(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method _imp._fix_co_filename}
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\proxy.py:11(connection_requires_http_tunnel)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:216(<genexpr>)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py:555(add_headers)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\Desktop\python\try_project\ds\PyProject\graph_builder.py:12(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\networkx\classes\digraph.py:1250(is_directed)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\inspect.py:2811(default)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\typing.py:2371(cast)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:337(_validate_conn)
+        1    0.000    0.000    0.000    0.000 C:\Users\Vika\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\cookies.py:87(get_new_headers)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1017(create_module)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:412(__init__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1209(get_filename)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:158(__init__)
+
+
